@@ -5,59 +5,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1773087759325"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1773087759325">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1773087759325">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1773952331564"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1773952331564">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1773952331564">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1773952331564">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1773952331564">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header">
 				<div class="header__container">
-					<div class="header__block">
-						<div class="header__head">
-							<div class="header__logo">
-								<h2>INFO BAO</h2>
-							</div>
-							<div class="header__menu menu">
-								<button type="button" data-fls-menu="" class="menu__icon icon-menu">
-									<span></span>
-								</button>
-								<nav class="menu__body">
-									<ul class="menu__list">
-										<li class="menu__item">
-											<a href="#" class="menu__link menu__link--active">Home</a>
-										</li>
-										<li class="menu__item">
-											<a href="#" class="menu__link">About Us</a>
-										</li>
-										<li class="menu__item">
-											<a href="#" class="menu__link">Blogs</a>
-										</li>
-										<li class="menu__item">
-											<a href="#" class="menu__link">Cosmetics Info</a>
-										</li>
-										<li class="menu__item">
-											<a href="#" class="menu__link">Contact</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-							<!--
+					<div data-fls-header-scroll="" class="header__body">
+						<div class="header__logo">
+							<h2>INFO BAO</h2>
+						</div>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="http://localhost:1111/index.html" class="menu__link menu__link--active">Home</a>
+									</li>
+									<li class="menu__item">
+										<a href="http://localhost:1111/about.html" class="menu__link">About Us</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Blogs</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Cosmetics Info</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
 <fetch url="@components/layout/menu/menu.json">
 <each loop='item in response'>
 </each>
 </fetch>
 -->
-						</div>
-						<div class="header__contant">
-							<h1 class="header__title">About Cosmetics</h1>
-							<p class="header__text">Learn more about other cosmetics with INFO BAO</p>
-							<a href="#" data-fls-button="" class="header__button button button--black">More information</a>
-						</div>
+						<button type="button" data-fls-menu="" class="icon-menu">
+							<span></span>
+						</button>
 					</div>
 				</div>
 			</header>
 			<main class="page">
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__content">
+							<div class="hero__body">
+								<h1 class="hero__title">About Cosmetics</h1>
+								<p class="hero__text">Learn more about other cosmetics with INFO BAO</p>
+							</div>
+							<a href="#" data-fls-button="" data-fls-scrollto=".info__title" class="hero__button button button--black">More information</a>
+						</div>
+					</div>
+					<div class="hero__picture">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/header/home-600.webp" type="image/webp">
+							<img class="hero__image" alt="Image" src="./assets/img/header/home.webp">
+						</picture>
+					</div>
+				</section>
 				<section class="page__about about">
 					<div class="about__container">
 						<div class="about__body">
@@ -272,7 +284,7 @@
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__body body-footer">
-						<div data-fls-spollers="600" class="body-footer__menus">
+						<div data-fls-spollers="700" class="body-footer__menus">
 							<details class="body-footer__menu">
 								<summary>
 									<h5 class="body-footer__title">Company</h5>
@@ -301,9 +313,6 @@
 										<a href="#" class="body-footer__link">South Los Angeles</a>
 									</li>
 									<li class="body-footer__item">
-										<a href="#" class="body-footer__link">Work Single</a>
-									</li>
-									<li class="body-footer__item">
 										<a href="#" class="body-footer__link">+1234567890</a>
 									</li>
 									<li class="body-footer__item">
@@ -318,9 +327,6 @@
 								<ul class="body-footer__list">
 									<li class="body-footer__item">
 										<a href="#" class="body-footer__link">infobao-contact@gmail.com</a>
-									</li>
-									<li class="body-footer__item">
-										<a href="#" class="body-footer__link">Services</a>
 									</li>
 									<li class="body-footer__item">
 										<a href="#" class="body-footer__link">Instagtam</a>
