@@ -1,5 +1,5 @@
 import "./main.min.js";
-import { g as getHash, d as dataMediaQueries, s as slideDown, a as setHash, b as slideUp, c as bodyUnlock, e as gotoBlock } from "./common.min.js";
+import { g as getHash, d as dataMediaQueries, s as slideDown, a as setHash, b as slideUp, c as bodyLockToggle, e as bodyLockStatus, f as bodyUnlock, h as gotoBlock } from "./common.min.js";
 function tabs() {
   const tabs2 = document.querySelectorAll("[data-fls-tabs]");
   let tabsActiveHash = [];
@@ -116,6 +116,15 @@ function tabs() {
   }
 }
 window.addEventListener("load", tabs);
+function menuInit() {
+  document.addEventListener("click", function(e) {
+    if (bodyLockStatus && e.target.closest("[data-fls-menu]")) {
+      bodyLockToggle();
+      document.documentElement.toggleAttribute("data-fls-menu-open");
+    }
+  });
+}
+document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
 function pageNavigation() {
   document.addEventListener("click", pageNavigationAction);
   document.addEventListener("watcherCallback", pageNavigationAction);

@@ -1,4 +1,4 @@
-import { d as dataMediaQueries, f as slideToggle, b as slideUp, h as bodyLockToggle, i as bodyLockStatus } from "./common.min.js";
+import { d as dataMediaQueries, i as slideToggle, b as slideUp } from "./common.min.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) return;
@@ -146,15 +146,6 @@ function spollers() {
   }
 }
 window.addEventListener("load", spollers);
-function menuInit() {
-  document.addEventListener("click", function(e) {
-    if (bodyLockStatus && e.target.closest("[data-fls-menu]")) {
-      bodyLockToggle();
-      document.documentElement.toggleAttribute("data-fls-menu-open");
-    }
-  });
-}
-document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
 function headerScroll() {
   const header = document.querySelector("[data-fls-header-scroll]");
   const headerShow = header.hasAttribute("data-fls-header-scroll-show");

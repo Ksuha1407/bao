@@ -1,0 +1,11 @@
+import "./main.min.js";
+import { e as bodyLockStatus, c as bodyLockToggle } from "./common.min.js";
+function menuAboutInit() {
+  document.addEventListener("click", function(e) {
+    if (bodyLockStatus && e.target.closest("[data-fls-menuabout]")) {
+      bodyLockToggle();
+      document.documentElement.toggleAttribute("data-fls-menuabout-open");
+    }
+  });
+}
+document.querySelector("[data-fls-menuabout]") ? window.addEventListener("load", menuAboutInit) : null;
