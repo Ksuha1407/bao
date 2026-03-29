@@ -1,5 +1,6 @@
 import "./main.min.js";
 import { g as getHash, d as dataMediaQueries, s as slideDown, a as setHash, b as slideUp, c as bodyLockToggle, e as bodyLockStatus, f as bodyUnlock, h as gotoBlock } from "./common.min.js";
+import "./blogcard.min.js";
 function tabs() {
   const tabs2 = document.querySelectorAll("[data-fls-tabs]");
   let tabsActiveHash = [];

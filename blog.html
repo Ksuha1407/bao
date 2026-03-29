@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<title>Blog</title>
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1774813058945">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1774813058945"></script>
+		<script type="module" crossorigin="" src="./js/headerabout.min.js?v=1774813058945"></script>
+		<script type="module" crossorigin="" src="./js/blogcard.min.js?v=1774813058945"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1774813058945">
+		<link rel="stylesheet" crossorigin="" href="./css/headerabout.min.css?v=1774813058945">
+		<link rel="stylesheet" crossorigin="" href="./css/blogcard.min.css?v=1774813058945">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1774813058945">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-headerabout="" class="headerabout">
+				<div class="headerabout__container">
+					<div data-fls-header-scroll="" class="headerabout__body">
+						<a href="index.html" class="headerabout__link-logo">
+							<h2>INFO BAO</h2>
+						</a>
+						<div class="headerabout__menuabout menuabout">
+							<nav class="menuabout__body">
+								<ul class="menuabout__list">
+									<li class="menuabout__item">
+										<a href="/index.html" class="menuabout__link">Home</a>
+									</li>
+									<li class="menuabout__item">
+										<a href="/about.html" class="menuabout__link">About Us</a>
+									</li>
+									<li class="menuabout__item">
+										<a href="/blog.html" class="menuabout__link menuabout__link--active">Blogs</a>
+									</li>
+									<li class="menuabout__item">
+										<a href="#" class="menuabout__link">Cosmetics Info</a>
+									</li>
+									<li class="menuabout__item">
+										<a href="#" class="menuabout__link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<button type="button" data-fls-menuabout="" class="icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<main class="page page--blog">
+					<section class="blog">
+						<div class="blog__container">
+							<h2 data-fls-blockhead="" class="blog__title title title--24">Blogs</h2>
+							<section class="blog__content content">
+								<div class="content__container">
+									<h2 data-fls-blockhead="" class="content__title title title--20">Face</h2>
+									<div class="content__body">
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Cleansers" src="./assets/img/blog/cleansers1.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Cleansers</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Eye Patches" src="./assets/img/blog/patches2.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Eye Patches</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Мasks" src="./assets/img/blog/masks3.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Мasks</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+									</div>
+									<div class="content__footer">
+										<a href="#" data-fls-button="" class="content__button button">More</a>
+									</div>
+								</div>
+							</section>
+							<section class="blog__content content">
+								<div class="content__container">
+									<h2 data-fls-blockhead="" class="content__title title title--20">Body</h2>
+									<div class="content__body">
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Body Scrab" src="./assets/img/blog/body-scrab1.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Body Scrab</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Body Lotion" src="./assets/img/blog/body-lotion2.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Body Lotion</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Body Oil" src="./assets/img/blog/body-oil3.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Body Oil</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+									</div>
+									<div class="content__footer">
+										<a href="#" data-fls-button="" class="content__button button">More</a>
+									</div>
+								</div>
+							</section>
+							<section class="blog__content content">
+								<div class="content__container">
+									<h2 data-fls-blockhead="" class="content__title title title--20">Hair</h2>
+									<div class="content__body">
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Hairbrush" src="./assets/img/blog/blog-hairbrush1.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Hairbrush</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Hair Styling" src="./assets/img/blog/hair-styling2.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Hair Styling</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+										<article data-fls-blogcard="" class="content__blog-card blog-card">
+											<div class="blog-card__picture">
+												<picture>
+													<img class="blog-card__image" alt="Split Ends" src="./assets/img/blog/blogs-split-ends3.webp">
+												</picture>
+											</div>
+											<div class="blog-card__body">
+												<h5 class="blog-card__title">Split Ends</h5>
+												<a href="#" class="blog-card__button">More</a>
+											</div>
+										</article>
+									</div>
+									<div class="content__footer">
+										<a href="#" data-fls-button="" class="content__button button">More</a>
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
+				</main>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__body body-footer">
+						<div data-fls-spollers="700" class="body-footer__menus">
+							<details class="body-footer__menu">
+								<summary>
+									<h5 class="body-footer__title">Company</h5>
+								</summary>
+								<ul class="body-footer__list">
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">Information</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">Contact</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">About</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">News</a>
+									</li>
+								</ul>
+							</details>
+							<details class="body-footer__menu">
+								<summary>
+									<h5 class="body-footer__title">Location</h5>
+								</summary>
+								<ul class="body-footer__list">
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">South Los Angeles</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">+1234567890</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">We always ready speak with you!</a>
+									</li>
+								</ul>
+							</details>
+							<details class="body-footer__menu">
+								<summary>
+									<h5 class="body-footer__title">Get in touch</h5>
+								</summary>
+								<ul class="body-footer__list">
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">infobao-contact@gmail.com</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">Instagtam</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">Facebook</a>
+									</li>
+									<li class="body-footer__item">
+										<a href="#" class="body-footer__link">Twitter</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__logo">
+							<a href="#">INFO BAO</a>
+						</div>
+						<div class="bottom-footer__copy">2021 ©infobao. All Rights Reserved.</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -5,11 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1774543838149"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774543838149">
-		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1774543838149">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1774543838149">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774543838149">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1774813058947"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1774813058947">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1774813058947">
+		<link rel="modulepreload" crossorigin="" href="./js/blogcard.min.js?v=1774813058947">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1774813058947">
+		<link rel="stylesheet" crossorigin="" href="./css/blogcard.min.css?v=1774813058947">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1774813058947">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -23,13 +25,13 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="index.html" class="menu__link menu__link--active">Home</a>
+										<a href="/index.html" class="menu__link menu__link--active">Home</a>
 									</li>
 									<li class="menu__item">
-										<a href="about.html" class="menu__link">About Us</a>
+										<a href="/about.html" class="menu__link">About Us</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">Blogs</a>
+										<a href="/blog.html" class="menu__link">Blogs</a>
 									</li>
 									<li class="menu__item">
 										<a href="#" class="menu__link">Cosmetics Info</a>
@@ -53,234 +55,236 @@
 				</div>
 			</header>
 			<main class="page">
-				<main class="page">
-					<section class="page__hero hero">
-						<div class="hero__container">
-							<div class="hero__content">
-								<div class="hero__body">
-									<h1 class="hero__title">About Cosmetics</h1>
-									<p class="hero__text">Learn more about other cosmetics with INFO BAO</p>
-								</div>
-								<a href="#" data-fls-button="" data-fls-scrollto=".info__title" data-fls-scrollto-top="100" class="hero__button button button--black">More information</a>
-							</div>
-						</div>
-						<div class="hero__picture">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/header/home-600.webp" type="image/webp">
-								<img class="hero__image" alt="Image" src="./assets/img/header/home.webp">
-							</picture>
-						</div>
-					</section>
-					<section class="page__about about">
-						<div class="about__container">
-							<div class="about__body">
-								<h2 data-fls-blockhead="" class="about__title title">About Us</h2>
-								<article class="about__content">
-									<div class="about__block">
-										<h3 class="about__head">Start new info</h3>
-										<p class="about__text">
-											When you want buy new cosmetics you need know about this cosmetics. This site help you find cosmetics what you want. We can help you to get acquainted with cosmetics. And you can find information about skin problem for teenager, adult and elder woman. We tell you about face skin cosmetics, hair cosmetics, cosmetics for makeup. We have got three sections: Korean cosmetics, American cosmetics, Europian cosmetics.
-										</p>
-										<p class="about__text">
-											We talk about brands: CHI(American hair cosmetics), Some by mi(Korean face cosmetics), La Roche-Posay(French face cosmetics) and other brands. We take cosmetics different price. Because not all can buy expensive cosmetics but all women want look beautiful. That's why we start this project! All women can buy cosmetics!
-										</p>
+				<main class="page page--home">
+					<div class="home">
+						<section class="home__hero hero">
+							<div class="hero__container">
+								<div class="hero__content">
+									<div class="hero__body">
+										<h1 class="hero__title">About Cosmetics</h1>
+										<p class="hero__text">Learn more about other cosmetics with INFO BAO</p>
 									</div>
-									<div class="about__picture">
-										<picture>
-											<img class="about__image" alt="Image" src="./assets/img/about/about-home.webp">
-										</picture>
-									</div>
-								</article>
-								<a href="#" data-fls-button="" class="about__button button">More</a>
-							</div>
-						</div>
-					</section>
-					<section class="page__info info">
-						<div class="info__container">
-							<h2 data-fls-blockhead="" class="info__title title title--36">Cosmetics Info</h2>
-							<div data-fls-tabs="" class="info__tabs tabs">
-								<nav data-fls-tabs-titles="" class="tabs__navigation">
-									<button type="button" class="tabs__title --tab-active">Korean</button>
-									<button type="button" class="tabs__title">Europian</button>
-									<button type="button" class="tabs__title">American</button>
-								</nav>
-								<div data-fls-tabs-body="" class="tabs__content">
-									<div class="tabs__body">
-										<article data-fls-infocard="" class="info-card">
-											<a href="#" class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_01.webp">
-												</picture>
-											</a>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Cosrx AC Collection Blemish Spot Clearing Serum</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<a href="#" class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_02.webp">
-												</picture>
-											</a>
-											<div class="info-card__body">
-												<h3 class="info-card__head">CHI Luxury Black Seed Oil Dry Oil</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<a href="#" class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_03.webp">
-												</picture>
-											</a>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Heimish Bulgarian Rose Satin Cream</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<a href="#" class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_04.webp">
-												</picture>
-											</a>
-											<div class="info-card__body">
-												<h5 class="info-card__head">La Roche-Posay Hyalu B5 Serum</h5>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<a href="#" class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_05.webp">
-												</picture>
-											</a>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Lancome Genifique Youth Activating Day Cream</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="tabs__info-card info-card">
-											<a href="#" class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_06.webp">
-												</picture>
-											</a>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Dermalogica Daily Skin Health Charcoal Rescue Masque</h3>
-											</div>
-										</article>
-									</div>
-									<div class="tabs__body">
-										<article data-fls-infocard="" class="info-card">
-											<div class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_01.webp">
-												</picture>
-											</div>
-											<div class="info-card__body">
-												<h5 class="info-card__head">Cosrx AC Collection Blemish Spot Clearing Serum</h5>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<div class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_02.webp">
-												</picture>
-											</div>
-											<div class="info-card__body">
-												<h3 class="info-card__head">CHI Luxury Black Seed Oil Dry Oil</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<div class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_03.webp">
-												</picture>
-											</div>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Heimish Bulgarian Rose Satin Cream</h3>
-											</div>
-										</article>
-									</div>
-									<div class="tabs__body">
-										<article data-fls-infocard="" class="info-card">
-											<div class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_01.webp">
-												</picture>
-											</div>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Cosrx AC Collection Blemish Spot Clearing Serum</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<div class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_02.webp">
-												</picture>
-											</div>
-											<div class="info-card__body">
-												<h3 class="info-card__head">CHI Luxury Black Seed Oil Dry Oil</h3>
-											</div>
-										</article>
-										<article data-fls-infocard="" class="info-card">
-											<div class="info-card__picture">
-												<picture>
-													<img class="info-card__image" alt="Image" src="./assets/img/info/image_03.webp">
-												</picture>
-											</div>
-											<div class="info-card__body">
-												<h3 class="info-card__head">Heimish Bulgarian Rose Satin Cream</h3>
-											</div>
-										</article>
-									</div>
+									<a href="#" data-fls-button="" data-fls-scrollto=".info__title" data-fls-scrollto-top="100" class="hero__button button button--black">More information</a>
 								</div>
 							</div>
-							<div class="info__footer">
-								<a href="#" data-fls-button="" class="info__button button">More</a>
+							<div class="hero__picture">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/header/home-600.webp" type="image/webp">
+									<img class="hero__image" alt="Image" src="./assets/img/header/home.webp">
+								</picture>
 							</div>
-						</div>
-					</section>
-					<section class="page__blogs blogs">
-						<div class="blogs__container">
-							<h2 data-fls-blockhead="" class="blogs__title title title--36">Blogs</h2>
-							<div class="blogs__content">
-								<article data-fls-blogcard="" class="blog-card">
-									<div class="blog-card__picture">
-										<picture>
-											<img class="blog-card__image" alt="Image" src="./assets/img/blog/image_01.webp">
-										</picture>
-									</div>
-									<div class="blog-card__body">
-										<h5 class="blog-card__title">Acne</h5>
-										<a href="#" class="blog-card__button">More</a>
-									</div>
-								</article>
-								<article data-fls-blogcard="" class="blog-card">
-									<div class="blog-card__picture">
-										<picture>
-											<img class="blog-card__image" alt="Image" src="./assets/img/blog/image_02.webp">
-										</picture>
-									</div>
-									<div class="blog-card__body">
-										<h5 class="blog-card__title">Acne</h5>
-										<a href="#" class="blog-card__button">More</a>
-									</div>
-								</article>
-								<article data-fls-blogcard="" class="blog-card">
-									<div class="blog-card__picture">
-										<picture>
-											<img class="blog-card__image" alt="Image" src="./assets/img/blog/image_03.webp">
-										</picture>
-									</div>
-									<div class="blog-card__body">
-										<h5 class="blog-card__title">Acne</h5>
-										<a href="#" class="blog-card__button">More</a>
-									</div>
-								</article>
+						</section>
+						<section class="home__about about">
+							<div class="about__container">
+								<div class="about__body">
+									<h2 data-fls-blockhead="" class="about__title title">About Us</h2>
+									<article class="about__content">
+										<div class="about__block">
+											<h3 class="about__head">Start new info</h3>
+											<p class="about__text">
+												When you want buy new cosmetics you need know about this cosmetics. This site help you find cosmetics what you want. We can help you to get acquainted with cosmetics. And you can find information about skin problem for teenager, adult and elder woman. We tell you about face skin cosmetics, hair cosmetics, cosmetics for makeup. We have got three sections: Korean cosmetics, American cosmetics, Europian cosmetics.
+											</p>
+											<p class="about__text">
+												We talk about brands: CHI(American hair cosmetics), Some by mi(Korean face cosmetics), La Roche-Posay(French face cosmetics) and other brands. We take cosmetics different price. Because not all can buy expensive cosmetics but all women want look beautiful. That's why we start this project! All women can buy cosmetics!
+											</p>
+										</div>
+										<div class="about__picture">
+											<picture>
+												<img class="about__image" alt="Image" src="./assets/img/about/about-home.webp">
+											</picture>
+										</div>
+									</article>
+									<a href="#" data-fls-button="" class="about__button button">More</a>
+								</div>
 							</div>
-							<div class="blogs__footer">
-								<a href="#" data-fls-button="" class="blogs__button button">More</a>
+						</section>
+						<section class="home__info info">
+							<div class="info__container">
+								<h2 data-fls-blockhead="" class="info__title title title--36">Cosmetics Info</h2>
+								<div data-fls-tabs="" class="info__tabs tabs">
+									<nav data-fls-tabs-titles="" class="tabs__navigation">
+										<button type="button" class="tabs__title --tab-active">Korean</button>
+										<button type="button" class="tabs__title">Europian</button>
+										<button type="button" class="tabs__title">American</button>
+									</nav>
+									<div data-fls-tabs-body="" class="tabs__content">
+										<div class="tabs__body">
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_01.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Cosrx AC Collection Blemish Spot Clearing Serum</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_02.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">CHI Luxury Black Seed Oil Dry Oil</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_03.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Heimish Bulgarian Rose Satin Cream</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_04.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">La Roche-Posay Hyalu B5 Serum</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_05.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Lancome Genifique Youth Activating Day Cream</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_06.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Dermalogica Daily Skin Health Charcoal Rescue Masque</h3>
+												</div>
+											</article>
+										</div>
+										<div class="tabs__body">
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_01.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Cosrx AC Collection Blemish Spot Clearing Serum</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_02.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">CHI Luxury Black Seed Oil Dry Oil</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_03.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Heimish Bulgarian Rose Satin Cream</h3>
+												</div>
+											</article>
+										</div>
+										<div class="tabs__body">
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_01.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Cosrx AC Collection Blemish Spot Clearing Serum</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_02.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">CHI Luxury Black Seed Oil Dry Oil</h3>
+												</div>
+											</article>
+											<article data-fls-infocard="" class="info-card">
+												<a href="#" class="info-card__picture">
+													<picture>
+														<img class="info-card__image" alt="Image" src="./assets/img/info/image_03.webp">
+													</picture>
+												</a>
+												<div class="info-card__body">
+													<h3 class="info-card__head">Heimish Bulgarian Rose Satin Cream</h3>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+								<div class="info__footer">
+									<a href="#" data-fls-button="" class="info__button button">More</a>
+								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+						<section class="home__blogs blogs">
+							<div class="blogs__container">
+								<h2 data-fls-blockhead="" class="blogs__title title title--36">Blogs</h2>
+								<div class="blogs__content">
+									<article data-fls-blogcard="" class="blog-card">
+										<div class="blog-card__picture">
+											<picture>
+												<img class="blog-card__image" alt="Image" src="./assets/img/blog/image_01.webp">
+											</picture>
+										</div>
+										<div class="blog-card__body">
+											<h5 class="blog-card__title">Acne</h5>
+											<a href="#" class="blog-card__button">More</a>
+										</div>
+									</article>
+									<article data-fls-blogcard="" class="blog-card">
+										<div class="blog-card__picture">
+											<picture>
+												<img class="blog-card__image" alt="Image" src="./assets/img/blog/image_02.webp">
+											</picture>
+										</div>
+										<div class="blog-card__body">
+											<h5 class="blog-card__title">Acne</h5>
+											<a href="#" class="blog-card__button">More</a>
+										</div>
+									</article>
+									<article data-fls-blogcard="" class="blog-card">
+										<div class="blog-card__picture">
+											<picture>
+												<img class="blog-card__image" alt="Image" src="./assets/img/blog/image_03.webp">
+											</picture>
+										</div>
+										<div class="blog-card__body">
+											<h5 class="blog-card__title">Acne</h5>
+											<a href="#" class="blog-card__button">More</a>
+										</div>
+									</article>
+								</div>
+								<div class="blogs__footer">
+									<a href="#" data-fls-button="" class="blogs__button button">More</a>
+								</div>
+							</div>
+						</section>
+					</div>
 				</main>
 			</main>
 			<footer data-fls-footer="" class="footer">

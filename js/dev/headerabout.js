@@ -1,4 +1,3 @@
-import "./main.min.js";
 import { e as bodyLockStatus, c as bodyLockToggle } from "./common.min.js";
 function menuAboutInit() {
   document.addEventListener("click", function(e) {
