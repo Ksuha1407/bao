@@ -8,7 +8,7 @@
 }
 .menuabout__link {
   font-weight: 400;
-  line-height: 1.33;
+  line-height: 1.3;
   color: #000;
   transition: color 0.3s;
   position: relative;
@@ -85,7 +85,7 @@
 }
 .headerabout__logo, .headerabout__link-logo {
   font-weight: 400;
-  line-height: 1.33;
+  line-height: 1.3;
   position: relative;
   z-index: 5;
 }
@@ -150,7 +150,7 @@
   }
   .menuabout__link {
     font-weight: 500;
-    line-height: 1.33;
+    line-height: 1.3;
     right: 0.9375rem;
   }
   .icon-menu {
